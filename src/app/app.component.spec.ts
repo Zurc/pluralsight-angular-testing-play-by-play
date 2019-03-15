@@ -1,49 +1,20 @@
 import { AppComponent } from './app.component';
 
-describe(`App Component`, () => {
-    let component: AppComponent;
+describe('App component', () => {
+	it('should add 1 + 1', () => {
+		expect(1 + 1).toEqual(2);
+	});
 
-    beforeEach(() => {
-        component = new AppComponent();
-    });
+	it('should have a component', () => {
+		const component = new AppComponent();
+		expect(component).toBeTruthy();
+	});
 
-    it(`should 1 + 1`, () => {
-        expect(1 + 1).toEqual(2);
-    });
-
-    it(`should have a component`, () => {
-        expect(component).toBeTruthy();
-    });
-
-    it(`should have a title of 'app'`, () => {
-        expect(component.title).toEqual('app');
-    });
+	it('should have a title of app', () => {
+		const component = new AppComponent();
+		expect(component.title).toBe('app');
+	});
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { TestBed, async } from '@angular/core/testing';
 // import { AppComponent } from './app.component';
